@@ -1,0 +1,19 @@
+{{>layouts/header}}
+
+<div class="card" style="width: 18rem;">
+    {{#article}}
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title" hidden="true">{{id}}</h5>
+        <h5 class="card-title">{{title}}</h5>
+        <p class="card-text">{{content}}</p>
+        <a href="/articles" class="btn btn-primary">목록</a>
+        <a href="/articles/{{id}}/edit" class="btn btn-warning">수정</a>
+        <a href="/articles/{{id}}/delete" class="btn btn-danger">삭제</a>
+    </div>
+    {{/article}}
+</div>
+
+
+
+{{>layouts/footer}}
